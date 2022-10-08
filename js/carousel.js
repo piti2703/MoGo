@@ -17,7 +17,7 @@ let startCarousel1 = setInterval(handleCarousel1, carouselSpeed1)
 const changeImage1 = () => {
 	if (index1 > carouselBoxes1.length - 1) {
 		index1 = 0
-	} else if (index < 0) {
+	} else if (index1 < 0) {
 		index1 = carouselBoxes1.length - 1
 	}
 
@@ -36,7 +36,7 @@ const handleLeftArrow1 = () => {
 
 const resetInterval1 = () => {
     changeImage1()
-    clearInterval(startCarousel)
+    clearInterval(startCarousel1)
 	startCarousel1 = setInterval(handleCarousel1, carouselSpeed1)
 }
 
