@@ -1,6 +1,10 @@
 const counterItems = document.querySelectorAll('.stats__box-num')
 const counterBox = document.querySelector('.stats')
 
+const options = {
+	rootMargin: '-250px'
+}
+
 const startCounter = entry => {
 
 	console.log(entry[0].isIntersecting);
